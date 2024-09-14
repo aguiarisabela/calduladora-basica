@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, seja bem vindo(a) a minha calculadora básica!</h1>
+    <p>Aqui nessa calculadora, será executada apenas operações basicas como: <strong>multiplicação, divisão, soma e subtração</strong>. <br>
+    O objetivo é apenas aprender os comandos de <strong>números, prompt, alert e if/else if</strong>.</p>
+    <script>
+        var n1 = Number(window.prompt("Digite um número: "))
+        var n2 = Number(window.prompt("Digite o segundo número: "))
+        var operador = window.prompt('Qual operação você deseja realizar? (+, -, *, /)')
+        var resultado
+        if (operador === "+") {
+            resultado = n1 + n2
+        }
+        else if (operador === "-"){
+        resultado = n1 - n2
+        }
+        else if (operador === "*"){
+            resultado = n1 * n2
+        }
+        else if(operador === "/"){
+            resultado = n1 / n2
+        }
+        else {
+            alert("Operação inválida, escolha um operador.")
+        }
+        window.alert(`A soma dos valores é: ${resultado}`)
+    </script>
+</body>
+</html>
